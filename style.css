@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    max-width: 60rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    display: inline-block;
+}
+
+legend {
+    text-transform: capitalize;
+}
+
+th span {
+    color: gray;
+}
+
+th span:hover {
+    color: black;
+}
+
+.filter {
+    text-align: center;
+}
+
+#tips {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tips thead {
+    background-color: lightgray;
+}
+
+#tips thead th {
+    padding: 0.5rem;
+    min-width: 6rem;
+}
+
+#tips tbody tr:nth-child(2n) {
+    background-color: lightsteelblue;
+}
+
+#tips tbody td {
+    padding: 0.25rem;
+}

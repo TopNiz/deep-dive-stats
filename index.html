@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tips Analytics</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="data.js"></script>
+    </head>
+    <body onload="loadData()">
+        <h1>Tips and analytics</h1>
+        <details>
+        <summary>
+            <h2>Filter</h2>
+        </summary>
+        <p class="filter">
+            <fieldset id="gender">
+                <legend>Gender</legend>
+            </fieldset>
+            <fieldset id="service">
+                <legend>Service</legend>
+            </fieldset>
+            <fieldset id="smoker">
+                <legend>Smoker</legend>
+            </fieldset>
+            <fieldset id="covers">
+                <legend>Covers</legend>
+            </fieldset>
+            <fieldset id="tickets"></fieldset>
+            <fieldset id="tip"></fieldset>
+            <select id="weekdays"></select>
+            <button class="action" onclick="filter()">Filter</button>
+            <button class="action" onclick="reset()">Reset</button>
+        </p>
+    </details>
+    <details open>
+        <summary>
+            <h2>Data</h2>
+        </summary>
+        <table id="tips">
+            <caption></caption>
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </details>
+    <details>
+        <summary>
+            <h2>Graphics</h2>
+        </summary>
+        <p>
+            <canvas id="myChart"></canvas>
+        </p>
+    </details>
+    </body>
+</html>
